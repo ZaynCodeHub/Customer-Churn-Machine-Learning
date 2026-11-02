@@ -1,4 +1,3 @@
-```markdown
 # 📊 Telco Customer Churn Prediction Engine
 
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
@@ -33,8 +32,6 @@ The project follows a microservices architecture orchestrated with Docker Compos
             |  Scikit-Learn   |  |   SQLite Database    |
             |   ML Pipeline   |  | (churn_predictions)  |
             +-----------------+  +----------------------+
-
-```
 
 ---
 
