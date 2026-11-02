@@ -1,0 +1,14 @@
+# ML & Data Processing
+pandas==2.2.2
+scikit-learn>=1.5.0
+joblib==1.4.2
+
+# Backend & Database
+fastapi==0.111.0
+uvicorn==0.29.0
+pydantic==2.7.1
+SQLAlchemy==2.0.30
+
+# Frontend
+streamlit==1.34.0
+requests==2.31.0

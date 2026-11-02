@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  #FASTapi backend service
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    container_name: churn_api
+  
+  # 2. The Streamlit Frontend Service
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api  # Tells Docker to wait for the API to boot up before starting the dashboard
+    container_name: churn_frontend
